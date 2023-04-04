@@ -1,0 +1,20 @@
+<div style="padding: 45px; background: antiquewhite">
+  <label for="prompt" style="padding: 4px; margin: 10px">Enter a prompt:</label
+  ><br />
+  <input
+    type="text"
+    [(ngModel)]="prompt"
+    name="prompt"
+    style="padding: 4px; margin: 10px;width: 100%;"
+  />
+  <br />
+  <button (click)="generateText(prompt)" style="padding: 4px; margin: 10px">
+    Generate
+  </button>
+</div>
+<br />
+
+<div style="margin: 15px; background: rgb(45, 230, 73)">
+  Generated Text: <br />
+  <span style="margin: 15px">{{ generatedText }}</span>
+</div>
